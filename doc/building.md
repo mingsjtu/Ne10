@@ -1,4 +1,11 @@
 # Building Ne10
+## Mytips
+- android version：Please use **android-ndk-16b**.The version is very important!For newer andriod ndk has prebuilt toolchains and *not support gcc , g++ , as and ranlib but only clang*.
+- ../android/android_config.cmake tips: modify the toolchains location with your own .For example, in line95, change it to
+```bash
+set(ANDROID_TOOLCHAIN_PATH "/tmp/my-android-toolchain/bin")#../android/android_config.cmake line95
+```
+
 
 ## Prerequisites
 
